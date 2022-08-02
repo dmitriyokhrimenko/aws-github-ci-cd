@@ -35,4 +35,20 @@ $ Role name ProjectXCodeDeployInstanceRole
  $ Install CodeDeploy agent for instance (https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ubuntu.html)
  $ sudo service codedeploy-agent restart (if codedeploy agent was installed before attaching ProjectXCodeDeployInstanceRole)
  ```
- 
+## AWS CodeDeploy configuration
+```bash
+$ Go to AWS CodeDeploy console
+$ Go to Deploy -> Applications -> Create application
+$ App name projectx
+$ Compute platform EC2/On-Premises
+$ Create deployment group (develop)
+$ Attach role ProjectXCodeDeploy (what we created abowe)
+$ Deployment type In place
+$ In Environment configuration select Amazon EC2 Instances (find by tag, etc.)
+````
+
+## AWS S3 bucket
+```bash
+$ Go to AWS S3
+$ Create bucket (projectx-codedeploy-deployments), set checkbox Block all public access
+```
