@@ -2,7 +2,7 @@
 
 ## AWS access user from GitHub Action
 
-### Add User project-deployer
+### Add User project-deployer (AWS console)
 ```bash
 Set checkbox programmatic access
 ```
@@ -19,14 +19,20 @@ $ Add policy AmazonEC2RoleforAWSCodeDeploy
 $ Role name ProjectXCodeDeployInstanceRole
 ```
 
-### Add user to group 
+### AWS CodeDeploy service role
 
 ```bash
- $ sudo usermod -a -G groupName userName / adduser username groupName 
+ $ Role -> Add Role
+ $ AWS Service -> CodeDeploy
+ $ AWSCodeDeployRole politic (will be add automatically)
+ $ Role name ProjectXCodeDeploy
  ```
 
-### Check which group a certain user belongs to
+## AWS EC2 instance
 
 ```bash
- $ groups [username]
+ $ Attach ProjectXCodeDeployInstanceRole (what we created abowe)
+ $ Install CodeDeploy agent for instance (https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ubuntu.html)
+ $ sudo service codedeploy-agent restart (if codedeploy agent was installed before attaching ProjectXCodeDeployInstanceRole)
  ```
+ 
