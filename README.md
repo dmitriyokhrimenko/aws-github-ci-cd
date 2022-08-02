@@ -5,7 +5,7 @@
 ### Add User "project-deployer" (AWS console)
 ```bash
 $ Set checkbox programmatic access
-$ Attach existing policies directly (AmazonS3FullAccess и AWSCodeDeployDeployerAccess) in Permissions section
+$ Go to attach existing policies directly (AmazonS3FullAccess и AWSCodeDeployDeployerAccess) in Permissions section
 ```
 
 ## AWS EC2 instances service role
