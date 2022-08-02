@@ -2,7 +2,7 @@
 
 ## AWS access user from GitHub Action
 
-### Add User project-deployer (AWS console)
+### Add User <project-deployer> (AWS console)
 ```bash
 Set checkbox programmatic access
 ```
