@@ -15,8 +15,8 @@ Set checkbox programmatic access
 ```bash
 $ Role -> Add role
 $ AWS Service -> EC2
-$ Add policy # AmazonEC2RoleforAWSCodeDeploy
-$ Role name # ProjectXCodeDeployInstanceRole
+$ Add policy AmazonEC2RoleforAWSCodeDeploy
+$ Role name ProjectXCodeDeployInstanceRole
 ```
 
 ### Add user to group 
