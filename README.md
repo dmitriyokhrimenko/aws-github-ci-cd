@@ -14,7 +14,7 @@ $ Go to attach existing policies directly (AmazonS3FullAccess и AWSCodeDeployDe
 ```bash
 $ Role -> Add role
 $ AWS Service -> EC2
-$ Add policy AmazonEC2RoleforAWSCodeDeploy
+$ Add permission AmazonEC2RoleforAWSCodeDeploy
 $ Role name ProjectXCodeDeployInstanceRole
 ```
 
